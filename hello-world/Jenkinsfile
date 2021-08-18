@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile source code christina' 
             }
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run security check against the application' 
             }
         }
         stage('Run Unit Tests') {
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Run Integration Tests') {
             steps {
-                echo 'Run only crucial integration tests from the source code' 
+                echo 'Run only crucial integration tests from source code' 
             }
         }
         stage('Publish Artifacts') {
